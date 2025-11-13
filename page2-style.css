@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacsystemFont, "Segoe UI", Roboto, sans-serif;
+    font-weight: 600;
+    background: radial-gradient(circle at center, #7ba6f6, #4a5d8f);
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+
+.container { 
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glow-card {
+    background-image: url("myfoto.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 40px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(100, 150, 255, 0.4);
+    transition: all 0.5s ease;
+    transform-style: preserve-3d;
+    margin-bottom: 30px;
+}
+
+.card2 {
+    background: rgba(30, 30, 30, 20%);
+    backdrop-filter: blur(1px);
+}
+
+.glow-card:hover {
+    box-shadow: 0 0 50px rgba(120, 180, 255, 0.7), 0 0 80px rgba(80, 160, 255, 0.4);
+    transform: rotate3d(1, 1, 0, 15deg);
+}
+
+.home-btn {
+    background: rgba(30, 30, 30, 20%);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 30px;
+}
+
+.home-btn:hover {
+    background: rgba(74, 246, 209, 0.133);
+    box-shadow: 0 0 20px rgba(120, 180, 255, 0.8);
+}
+
+.btn-cart {
+    background: rgba(30, 30, 30, 20%);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-cart:hover {
+    background: rgba(74, 246, 209, 0.133);
+    box-shadow: 0 0 20px rgba(120, 180, 255, 0.8);
+}
+
+h1 {
+    margin: 30px 0 20px;
+    font-size: 1.5em;
+}
+
+p {
+     margin: 30px 0 20px;
+    font-size: 1.5em;
+    font-family: -apple-system, BlinkMacsystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    color: #fff;
+}
+
+.info-box {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 15px 50px;
+    margin: 20px 0;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.info-box:hover {
+    box-shadow: 0 0 50px rgba(120, 180, 255, 0.7), 0 0 80px rgba(80, 160, 255, 0.4);
+    transform: rotate3d(1, 1, 0, 15deg);
+}

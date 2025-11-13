@@ -1,0 +1,275 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacsystemFont, "Segoe UI", Roboto, sans-serif;
+    font-weight: 600;
+    background: radial-gradient(circle at center, #7ba6f6, #4a5d8f);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.container { 
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.glow-card {
+    background-image: url("myfoto3.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 80px;
+    box-shadow: 0 0 30px rgba(100, 150, 255, 0.4);
+    transition: all 0.5s ease;
+    height: 500px;
+    width: 600px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.book-card {
+    width: 400px;
+    height: 500px;
+    background: rgba(30, 30, 30, 20%);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-left: 250px;
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+}
+
+.book-cover {
+    background: rgba(30, 30, 30, 20%);
+    backdrop-filter: blur(1px);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.book-cover h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 300;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Область с текстом */
+.book-content {
+    padding: 25px;
+    overflow-y: auto;
+    flex-grow: 1;
+    line-height: 1.6;
+}
+
+.book-content p {
+    margin-bottom: 15px;
+    color: white;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.book-content p:first-child {
+    margin-top: 0;
+}
+
+.book-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Стили для скроллбара */
+.book-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.book-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.book-content::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 3px;
+}
+
+.book-content::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 480px) {
+    .book-card {
+        width: 90%;
+        height: 450px;
+        margin: 10px auto;
+    }
+    
+    .book-cover {
+        padding: 20px;
+    }
+    
+    .book-cover h2 {
+        font-size: 20px;
+    }
+    
+    .book-content {
+        padding: 20px;
+    }
+    
+    .book-content p {
+        font-size: 13px;
+    }
+}
+
+/* Для очень маленьких экранов */
+@media (max-width: 320px) {
+    .book-card {
+        height: 400px;
+    }
+    
+    .book-content p {
+        font-size: 12px;
+    }
+}
+
+
+.card3 {
+    background-image: url("noutbook.png");
+    margin-left: 300px;
+    width: 75px;
+    height: 10px;
+    position: absolute;
+    top: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column
+}
+
+.card4 {
+    background-image: url("macbook.png");
+    margin-left: 300px;
+    width: 75px;
+    height: 10px;
+    position: absolute;
+    top: 270px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column
+}
+
+.card5 {
+    background-image: url("proga.jpg");
+    margin-left: 300px;
+    width: 75px;
+    height: 10px;
+    position: absolute;
+    top: 500px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column
+}
+
+.card6 {
+    background-image: url("visualstudio.jpg");
+    margin-right: 1820px;
+    width: 75px;
+    height: 10px;
+    position: absolute;
+    top: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column
+}
+
+.card7 {
+    background-image: url("pythonlogo.jpg");
+    margin-right: 1820px;
+    width: 75px;
+    height: 10px;
+    position: absolute;
+    top: 270px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column
+}
+
+.card8 {
+    background-image: url("html.jpg");
+    margin-right: 1820px;
+    width: 75px;
+    height: 10px;
+    position: absolute;
+    top: 500px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column
+}
+
+.glow-card:hover {
+    box-shadow: 0 0 50px rgba(120, 180, 255, 0.7), 0 0 80px rgba(80, 160, 255, 0.4);
+    transform: rotate3d(1, 1, 0, 15deg);
+}
+
+.home-btn {
+    background: rgba(30, 30, 30, 20%);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 30px;
+}
+
+.home-btn:hover {
+    box-shadow: 0 0 25px rgba(53, 47, 29, 0.8);
+    transform: translateY(-2px);
+}
+
+.btn-cart {
+    background: rgba(30, 30, 30, 20%);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-cart:hover {
+    background: rgba(74, 246, 209, 0.133);
+    box-shadow: 0 0 20px rgba(120, 180, 255, 0.8);
+}
