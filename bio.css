@@ -11,8 +11,12 @@ body {
     align-items: center;
     height: 100vh;
     color: #fff;
+    max-width:100%
 }
 
+img {
+    max-width:100%;
+    height:auto;
 .container { 
     height: 100%;
     display: flex;
@@ -272,4 +276,5 @@ body {
 .btn-cart:hover {
     background: rgba(74, 246, 209, 0.133);
     box-shadow: 0 0 20px rgba(120, 180, 255, 0.8);
+
 }
